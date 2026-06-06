@@ -98,8 +98,7 @@ export default function HomePage() {
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">What we do</p>
           <h2 className="text-4xl font-bold text-charcoal mb-4 max-w-xl">Two practice areas. One rare intersection.</h2>
           <p className="text-gray-600 max-w-2xl mb-16">
-            No competitor has organized around both environmental operations and civic intelligence.
-            That adjacency is our moat.
+            Environmental operations and civic intelligence belong together — organizations that can measure their impact and earn community trust operate from a fundamentally stronger position.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">

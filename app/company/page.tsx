@@ -140,7 +140,7 @@ export default function CompanyPage() {
             <p className="text-teal-100/80 leading-relaxed max-w-3xl">
               Our clients buy certainty. In sustainability: certainty that their carbon numbers are real and
               defensible. In civic work: certainty that a project will not be derailed by opposition they didn't
-              see coming. The adjacency between environmental and civic is our moat — and it compounds.
+              see coming. Organizations that can measure their environmental impact and secure genuine community trust operate from a position that is structurally more durable — and that compounds over time.
             </p>
           </div>
         </div>
