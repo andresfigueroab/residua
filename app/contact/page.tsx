@@ -1,6 +1,12 @@
 import ContactForm from "@/components/ContactForm";
+import { buildMetadata } from "@/lib/metadata";
 
-export const metadata = { title: "Contact Us — Residua" };
+export const metadata = buildMetadata({
+  title: "Contact Us",
+  description:
+    "Get in touch with Residua. Tell us about your organization and we'll scope the right engagement — waste audits, carbon reporting, stakeholder mapping, or community approval strategy.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

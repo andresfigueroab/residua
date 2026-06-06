@@ -1,4 +1,13 @@
 import Link from "next/link";
+import { buildMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/JsonLd";
+
+export const metadata = buildMetadata({
+  title: "Company",
+  description:
+    "Residua exists at the intersection of environmental intelligence and civic trust. Learn about our mission, vision, six operating principles, and how we position ourselves in the market.",
+  path: "/company",
+});
 
 const philosophy = [
   {
@@ -39,6 +48,33 @@ const notList = [
   {
     label: "Not a PR firm.",
     body: "When we conduct public opinion research, we report what communities actually think, not the version most favorable to our client. The value is in the honesty.",
+  },
+];
+
+const faqs = [
+  {
+    q: "What is Residua?",
+    a: "Residua is an environmental and civic intelligence consulting firm. We help organizations measure and manage what they leave behind — waste, carbon emissions, and unresolved community tension. We operate across two practice areas: Environmental Intelligence and Civic Intelligence.",
+  },
+  {
+    q: "What is the difference between Environmental Intelligence and Civic Intelligence?",
+    a: "Environmental Intelligence focuses on physical residue: we audit waste streams, embed recycling cultures, and produce auditable Scope 1, 2, and 3 carbon disclosures. Civic Intelligence focuses on social residue: we map stakeholders, conduct public opinion research, and develop the community engagement strategies that protect infrastructure projects from opposition.",
+  },
+  {
+    q: "Who are Residua's typical clients?",
+    a: "Residua serves manufacturing and logistics companies, commercial real estate firms, data center developers, energy and utility companies, private equity and infrastructure funds, and municipal governments. Any organization that generates significant waste, emits carbon, or develops infrastructure in communities where trust must be earned.",
+  },
+  {
+    q: "What does a Residue Intelligence engagement produce?",
+    a: "A Residue Intelligence audit produces a facility-level breakdown of waste streams, recycling rates, contamination points, and the carbon cost of the gap between what could be recycled and what actually is. Deliverables include a tracking dashboard so the client can monitor progress without re-engaging us for every measurement.",
+  },
+  {
+    q: "How does Residua's carbon reporting differ from a traditional ESG consultant?",
+    a: "Our deliverables are operational, not aspirational. We collect source data from facility floors, apply current GHG Protocol emissions factors, and produce disclosures that are traceable, methodology-documented, and defensible under third-party audit — not summary frameworks or narrative reports.",
+  },
+  {
+    q: "What does an Infrastructure Sentiment Study involve?",
+    a: "We conduct structured interviews and community research before a project is announced, map the specific stakeholders whose posture shapes the broader community response, model likely opposition scenarios, and develop the engagement strategy needed to secure and maintain community approval through the permitting process.",
   },
 ];
 
@@ -171,6 +207,35 @@ export default function CompanyPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ — GEO optimized */}
+      <section id="faq" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">FAQ</p>
+          <h2 className="text-4xl font-bold text-charcoal mb-12">Common questions.</h2>
+          <div className="divide-y divide-gray-100 max-w-3xl">
+            {faqs.map((f) => (
+              <details key={f.q} className="group py-5 cursor-pointer">
+                <summary className="flex items-center justify-between font-semibold text-charcoal text-base list-none">
+                  {f.q}
+                  <span className="text-teal-700 text-xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-4 text-gray-600 text-sm leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }} />
 
       {/* CTA */}
       <section className="py-20 bg-teal-700 text-white">

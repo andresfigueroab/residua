@@ -1,16 +1,26 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getResource, resources, typeLabels, typeColors } from "@/lib/resources";
+import JsonLd from "@/components/JsonLd";
 
 export async function generateStaticParams() {
   return resources.map((r) => ({ slug: r.slug }));
 }
 
+const BASE_URL = "https://residua.vercel.app";
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const resource = getResource(slug);
   if (!resource) return {};
-  return { title: `${resource.title} — Residua` };
+  const url = `${BASE_URL}/resources/${slug}`;
+  return {
+    title: resource.title,
+    description: resource.excerpt,
+    alternates: { canonical: url },
+    openGraph: { title: resource.title, description: resource.excerpt, url, type: "article", publishedTime: resource.date },
+    twitter: { card: "summary_large_image", title: resource.title, description: resource.excerpt },
+  };
 }
 
 export default async function ResourceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -22,8 +32,21 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
     .filter((r) => r.slug !== slug && (r.type === resource.type || r.service === resource.service))
     .slice(0, 3);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": resource.type === "video" ? "VideoObject" : resource.type === "testimonial" ? "Review" : "Article",
+    headline: resource.title,
+    description: resource.excerpt,
+    datePublished: resource.date,
+    publisher: { "@type": "Organization", name: "Residua", url: BASE_URL },
+    ...(resource.type === "testimonial" && resource.author
+      ? { author: { "@type": "Person", name: resource.author }, reviewBody: resource.body }
+      : {}),
+  };
+
   return (
     <>
+      <JsonLd data={articleSchema} />
       {/* Hero */}
       <section className="bg-teal-900 text-white py-20">
         <div className="max-w-4xl mx-auto px-6">

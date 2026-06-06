@@ -1,6 +1,11 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Carbon Visibility Reporting — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Carbon Visibility Reporting",
+  description: "Residua translates raw operational and supply chain data into auditable Scope 1, 2, and 3 carbon disclosures — ready for SEC climate rule filing, CDP, TCFD, investor disclosure, and ESG benchmarking.",
+  path: "/services/carbon-visibility-reporting",
+});
 
 export default function CarbonVisibilityPage() {
   return (

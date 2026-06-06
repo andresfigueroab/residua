@@ -1,0 +1,51 @@
+# Residua
+
+> Residua is an environmental and civic intelligence consulting firm. We help organizations understand what they leave behind — the waste in their buildings, the carbon in their operations, and the unresolved tensions in the communities where they build. We turn that residue into clarity, and clarity into action.
+
+## What Residua does
+
+Residua operates across two practice areas:
+
+**Environmental Intelligence** — We audit waste streams, build recycling cultures inside factories and office buildings, and produce auditable Scope 1, 2, and 3 carbon disclosures for regulatory filing, investor disclosure, and ESG benchmarking.
+
+**Civic Intelligence** — We map the stakeholders who can accelerate or block infrastructure projects, conduct public opinion research and deep-listening studies, and develop the community engagement strategies needed to secure and maintain project approval.
+
+## Services
+
+### Environmental Intelligence
+- **Residue Intelligence**: Full waste and recycling audit of a workplace. Output: facility-level breakdown of waste streams, recycling rates, contamination points, and emissions equivalents. Deliverables include tracking dashboards.
+- **Culture Transformation**: Design and embedding of recycling strategies inside factories and office buildings. Includes habit mapping, behavioral change programs, staff engagement, and ongoing emissions measurement.
+- **Carbon Visibility Reporting**: Translation of operational and supply chain data into auditable Scope 1, 2, and 3 carbon disclosures. Formats include SEC climate rule, CDP, TCFD, and investor-specific templates.
+
+### Civic Intelligence
+- **Civic Intelligence & Stakeholder Mapping**: Identification and mapping of civic groups, political actors, neighborhood associations, advocacy organizations, and community leaders relevant to an infrastructure project.
+- **Public Opinion Research**: Referendums, deep-listening studies, and quantitative opinion research. Output: structured map of community concerns, trade-offs, and conditions under which the community approves a project.
+- **Infrastructure Sentiment Studies**: Specialized research for data centers, energy facilities, logistics hubs, and transmission corridors. Includes opposition scenario modeling and engagement strategy development.
+
+## Who Residua serves
+
+- Manufacturing and logistics companies (waste audits, recycling culture, Scope 1/2 emissions reporting)
+- Commercial real estate firms (building-level residue intelligence, tenant sustainability programs)
+- Data center developers (infrastructure sentiment studies, community approval strategy)
+- Energy and utility companies (civic intelligence for facility siting, stakeholder management)
+- Private equity and infrastructure funds (pre-acquisition ESG due diligence, community risk assessment)
+- Municipal governments (waste strategy, public opinion research, civic engagement design)
+
+## Philosophy
+
+Residua operates by six principles:
+1. Residue is the truth — what an organization discards and leaves unresolved reveals more than any report it publishes.
+2. Visibility before strategy — establish what is real before recommending what to do.
+3. Data without ideology — surface facts and map trade-offs; do not advocate for a predetermined outcome.
+4. Systems, not symptoms — address structural conditions, not surface-level fixes.
+5. Trust is infrastructure — social license protects timelines, reduces regulatory friction, and compounds over time.
+6. Leave less behind — every engagement ends with a client that produces less waste, emits less carbon, and leaves less unresolved friction.
+
+## Positioning
+
+Residua is not a cleaning company, a traditional ESG consultant, or a PR firm. Residua is a data-first consulting firm whose deliverables are operational, not aspirational. Clients engage Residua to reduce risk — certainty that carbon numbers are defensible, and certainty that infrastructure projects will not be derailed by community opposition.
+
+## Contact
+
+Website: https://residua.vercel.app
+Contact form: https://residua.vercel.app/contact

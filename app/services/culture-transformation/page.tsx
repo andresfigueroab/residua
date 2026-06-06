@@ -1,6 +1,11 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Culture Transformation — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Culture Transformation",
+  description: "Residua embeds recycling strategies inside factories and office buildings through habit mapping, behavioral change programs, staff engagement, and ongoing emissions measurement — turning a one-time audit into lasting operational change.",
+  path: "/services/culture-transformation",
+});
 
 export default function CultureTransformationPage() {
   return (

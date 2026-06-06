@@ -1,4 +1,7 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+
+const BASE_URL = "https://residua.vercel.app";
 
 interface Step {
   title: string;
@@ -28,8 +31,18 @@ export default function ServicePage({
   tags,
   relatedServices,
 }: ServicePageProps) {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description: what,
+    provider: { "@type": "Organization", name: "Residua", url: BASE_URL },
+    serviceType: practiceArea,
+  };
+
   return (
     <>
+      <JsonLd data={serviceSchema} />
       {/* Hero */}
       <section className="bg-teal-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-6">

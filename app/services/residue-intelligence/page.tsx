@@ -1,6 +1,11 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Residue Intelligence — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Residue Intelligence",
+  description: "Residua audits and maps the full waste and recycling profile of a workplace — what is generated, what is actually recycled, and the real carbon cost of the gap. Output includes tracking dashboards and verified emissions data.",
+  path: "/services/residue-intelligence",
+});
 
 export default function ResidueIntelligencePage() {
   return (

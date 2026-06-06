@@ -1,6 +1,11 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Public Opinion Research — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Public Opinion Research",
+  description: "Residua conducts referendums, deep-listening studies, and quantitative opinion research to understand what communities fear, what they value, and the conditions under which they approve a project.",
+  path: "/services/public-opinion-research",
+});
 
 export default function PublicOpinionPage() {
   return (

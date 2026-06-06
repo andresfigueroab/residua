@@ -1,6 +1,11 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Infrastructure Sentiment Studies — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Infrastructure Sentiment Studies",
+  description: "Residua provides specialized community research for data centers, energy facilities, logistics hubs, and transmission corridors — mapping public concerns, modeling opposition scenarios, and building the engagement strategy to secure approval.",
+  path: "/services/infrastructure-sentiment",
+});
 
 export default function InfrastructureSentimentPage() {
   return (

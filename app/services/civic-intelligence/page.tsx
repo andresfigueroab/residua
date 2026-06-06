@@ -1,6 +1,11 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Civic Intelligence & Stakeholder Mapping — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Civic Intelligence & Stakeholder Mapping",
+  description: "Residua identifies and maps the full landscape of stakeholders that can accelerate or block an infrastructure project — civic groups, political actors, neighborhood associations, and community leaders — before they become obstacles.",
+  path: "/services/civic-intelligence",
+});
 
 export default function CivicIntelligencePage() {
   return (

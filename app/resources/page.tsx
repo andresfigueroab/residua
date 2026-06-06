@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { resources, typeLabels, typeColors, type ResourceType } from "@/lib/resources";
 
-export const metadata = { title: "Resources — Residua" };
+import { buildMetadata } from "@/lib/metadata";
+export const metadata = buildMetadata({
+  title: "Resources",
+  description: "Case studies, client testimonials, video overviews, and articles from Residua's environmental and civic intelligence practice — real engagements, real outcomes.",
+  path: "/resources",
+});
 
 function ResourceCard({ resource }: { resource: typeof resources[0] }) {
   return (

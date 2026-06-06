@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  title: "Services",
+  description:
+    "Six integrated consulting services across two practice areas: Environmental Intelligence (waste audits, culture transformation, carbon reporting) and Civic Intelligence (stakeholder mapping, public opinion research, infrastructure sentiment studies).",
+  path: "/services",
+});
 
 const envServices = [
   {
