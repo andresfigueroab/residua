@@ -52,7 +52,7 @@ export default function RootLayout({
     knowsAbout: [
       "Waste auditing",
       "Carbon emissions reporting",
-      "ESG consulting",
+      "Non-market environment analysis",
       "Scope 1 2 3 emissions",
       "Stakeholder mapping",
       "Community engagement",

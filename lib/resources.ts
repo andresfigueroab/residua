@@ -54,25 +54,6 @@ The developer announced the project with a structured community benefits package
 The project is now operational. No litigation. No material delay.`,
   },
   {
-    slug: "testimonial-private-equity-esg",
-    type: "testimonial",
-    title: "\"The only ESG due diligence we've done that actually changed our valuation model.\"",
-    excerpt:
-      "A managing director at a $4B infrastructure fund on what made Residua's pre-acquisition ESG assessment different from every other firm they'd used.",
-    date: "2025-10-22",
-    author: "Managing Director",
-    company: "Infrastructure Fund (confidential)",
-    role: "Managing Director, ESG & Portfolio Risk",
-    service: "Carbon Visibility Reporting",
-    body: `"We've used four ESG consultants in the last three years. All of them delivered reports. None of them delivered findings that changed how we priced an asset.
-
-Residua was different from the first site visit. They weren't checking boxes against a framework — they were measuring actual waste streams, walking the floor, asking facility managers questions the managers had never been asked. When the report came back, it had numbers in it that our model hadn't accounted for: $2.3M in annual landfill costs that were off-balance-sheet, and a Scope 3 exposure that, properly calculated, would have triggered our fund's ESG exclusion threshold.
-
-We renegotiated the purchase price. The seller understood — the data was real and they knew it.
-
-We now use Residua for every manufacturing acquisition above $100M. The cost of the engagement is a rounding error compared to what we've avoided."`,
-  },
-  {
     slug: "testimonial-real-estate-carbon",
     type: "testimonial",
     title: "\"We thought we had a recycling program. We had theater.\"",
@@ -96,22 +77,22 @@ More importantly: we can now prove it. Every number is traceable. When our insti
   {
     slug: "video-civic-intelligence-explained",
     type: "video",
-    title: "What Is Civic Intelligence? The Residua Approach.",
+    title: "Understanding the Non-Market Environment: How Companies Earn the Social License to Operate.",
     excerpt:
-      "A 12-minute overview of how Residua approaches stakeholder mapping and community engagement for infrastructure projects — what the data looks like, how we collect it, and why it changes outcomes.",
+      "An overview of how Residua helps organizations map their non-market environment — the stakeholders, community dynamics, and social forces that shape whether a project succeeds or stalls.",
     date: "2025-07-15",
     service: "Civic Intelligence & Stakeholder Mapping",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    body: `In this overview, Residua's civic intelligence practice lead walks through the methodology behind our stakeholder mapping and public opinion research work.
+    videoUrl: "https://www.youtube.com/embed/z9W4DN_PKac",
+    body: `Every project operates in two environments simultaneously: the market environment of contracts, capital, and competition — and the non-market environment of community opinion, civic actors, and social trust. Most organizations plan for the first and ignore the second — until it stops them.
 
-Topics covered:
-— Why community opposition is a data problem, not a communication problem
-— How we structure a stakeholder landscape map
-— What a "posture model" is and how we use it
-— The difference between sentiment data and conditions data
-— How Infrastructure Sentiment Studies differs from traditional community engagement
+Residua's approach is built on a simple premise: the social license to operate is not given, it is earned through sustained listening, honest engagement, and the willingness to understand what communities actually care about — before you need their approval.
 
-Running time: 12 minutes.`,
+In this video, we walk through:
+— What the non-market environment is and why it determines project outcomes
+— How we map the stakeholders who shape community response
+— The difference between public relations and genuine community intelligence
+— How organizations earn and maintain the social license to operate
+— Why community opposition is a data problem, not a communication problem`,
   },
   {
     slug: "article-scope-3-reporting-2025",

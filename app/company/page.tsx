@@ -42,7 +42,7 @@ const notList = [
     body: "We use the language and methods of waste management to produce strategic intelligence that changes how organizations operate. The mop is a metaphor.",
   },
   {
-    label: "Not a traditional ESG consultant.",
+    label: "Not a checkbox consultant.",
     body: "We get our hands dirty — on factory floors, in town halls, in community meetings — and we bring back data, not frameworks. Our deliverables are operational, not aspirational.",
   },
   {
@@ -62,14 +62,14 @@ const faqs = [
   },
   {
     q: "Who are Residua's typical clients?",
-    a: "Residua serves manufacturing and logistics companies, commercial real estate firms, data center developers, energy and utility companies, private equity and infrastructure funds, and municipal governments. Any organization that generates significant waste, emits carbon, or develops infrastructure in communities where trust must be earned.",
+    a: "Residua serves manufacturing and logistics companies, commercial real estate firms, data center developers, and municipal governments. Any organization that generates significant waste, emits carbon, or develops infrastructure in communities where trust must be earned.",
   },
   {
     q: "What does a Residue Intelligence engagement produce?",
     a: "A Residue Intelligence audit produces a facility-level breakdown of waste streams, recycling rates, contamination points, and the carbon cost of the gap between what could be recycled and what actually is. Deliverables include a tracking dashboard so the client can monitor progress without re-engaging us for every measurement.",
   },
   {
-    q: "How does Residua's carbon reporting differ from a traditional ESG consultant?",
+    q: "How does Residua's carbon reporting differ from a traditional consultant?",
     a: "Our deliverables are operational, not aspirational. We collect source data from facility floors, apply current GHG Protocol emissions factors, and produce disclosures that are traceable, methodology-documented, and defensible under third-party audit — not summary frameworks or narrative reports.",
   },
   {
@@ -82,8 +82,6 @@ const clients = [
   { segment: "Manufacturing & Logistics", need: "Waste audits, recycling culture, Scope 1/2 emissions reporting" },
   { segment: "Commercial Real Estate", need: "Building-level residue intelligence, tenant sustainability programs" },
   { segment: "Data Center Developers", need: "Infrastructure sentiment studies, community approval strategy" },
-  { segment: "Energy & Utilities", need: "Civic intelligence for facility siting, stakeholder management" },
-  { segment: "Private Equity & Infrastructure Funds", need: "Pre-acquisition ESG due diligence, community risk assessment" },
   { segment: "Municipal Governments", need: "Waste strategy, public opinion research, civic engagement design" },
 ];
 

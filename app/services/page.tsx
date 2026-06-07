@@ -29,9 +29,9 @@ const envServices = [
     icon: "🌿",
     name: "Carbon Visibility Reporting",
     href: "/services/carbon-visibility-reporting",
-    tags: ["scope 1 / 2 / 3", "ESG reporting", "audit-ready", "investor disclosure"],
+    tags: ["scope 1 / 2 / 3", "carbon disclosure", "audit-ready", "investor disclosure"],
     summary:
-      "We translate raw operational and supply chain data into clear, auditable carbon disclosures ready for regulatory filing, investor disclosure, and ESG benchmarking.",
+      "We translate raw operational and supply chain data into clear, auditable carbon disclosures ready for regulatory filing, investor disclosure, and third-party audit.",
   },
 ];
 

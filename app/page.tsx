@@ -44,8 +44,6 @@ const clients = [
   "Manufacturing & Logistics",
   "Commercial Real Estate",
   "Data Center Developers",
-  "Energy & Utilities",
-  "Private Equity & Infrastructure Funds",
   "Municipal Governments",
 ];
 

@@ -36,7 +36,7 @@ export default function CultureTransformationPage() {
         },
         {
           title: "Emissions reporting",
-          body: "We translate the behavioral change into verified emissions reductions you can include in ESG disclosures and investor reporting.",
+          body: "We translate the behavioral change into verified emissions reductions you can include in carbon disclosures and investor reporting.",
         },
       ]}
       relatedServices={[

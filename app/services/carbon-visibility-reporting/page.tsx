@@ -3,7 +3,7 @@ import ServicePage from "@/components/ServicePage";
 import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "Carbon Visibility Reporting",
-  description: "Residua translates raw operational and supply chain data into auditable Scope 1, 2, and 3 carbon disclosures — ready for SEC climate rule filing, CDP, TCFD, investor disclosure, and ESG benchmarking.",
+  description: "Residua translates raw operational and supply chain data into auditable Scope 1, 2, and 3 carbon disclosures — ready for SEC climate rule filing, CDP, TCFD, and investor disclosure.",
   path: "/services/carbon-visibility-reporting",
 });
 
@@ -14,9 +14,9 @@ export default function CarbonVisibilityPage() {
       icon="🌿"
       name="Carbon Visibility Reporting"
       tagline="Clarity your auditors and investors can trust."
-      intro="We translate raw operational and supply chain data into clear, auditable carbon disclosures — Scope 1, 2, and 3 — ready for regulatory filing, investor disclosure, and ESG benchmarking."
+      intro="We translate raw operational and supply chain data into clear, auditable carbon disclosures — Scope 1, 2, and 3 — ready for regulatory filing, investor disclosure, and third-party audit."
       what="Carbon Visibility Reporting is the natural output of a Residue Intelligence engagement — and it stands alone for organizations that already have waste data but lack the reporting infrastructure to make it legible. We take your operational data, apply the emissions factors appropriate to your industry and geography, and produce disclosures in the formats required by the frameworks your investors and regulators care about. We do not produce aspirational reports. We produce auditable documents: traceable to source data, defensible under review, and formatted for the specific filing or disclosure you face."
-      tags={["scope 1 / 2 / 3", "ESG reporting", "audit-ready", "investor disclosure", "regulatory filing", "GHG protocol", "TCFD-aligned"]}
+      tags={["scope 1 / 2 / 3", "carbon disclosure", "audit-ready", "investor disclosure", "regulatory filing", "GHG protocol", "TCFD-aligned"]}
       steps={[
         {
           title: "Data collection",
