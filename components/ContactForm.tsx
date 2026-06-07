@@ -30,9 +30,35 @@ export default function ContactForm() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setState("submitting");
-    // Simulate submission — replace with actual API call
-    await new Promise((r) => setTimeout(r, 1200));
-    setState("success");
+
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    setState(res.ok ? "success" : "error");
+  }
+
+  if (state === "error") {
+    return (
+      <div className="bg-white border border-red-200 rounded-xl p-12 text-center">
+        <h3 className="text-xl font-bold text-charcoal mb-3">Something went wrong.</h3>
+        <p className="text-gray-600 text-sm max-w-sm mx-auto mb-6">
+          We couldn't send your message. Please try again or email us directly at{" "}
+          <a href="mailto:sales@residua.earth" className="text-teal-700 underline">sales@residua.earth</a>.
+        </p>
+        <button
+          onClick={() => setState("idle")}
+          className="px-6 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors text-sm"
+        >
+          Try again
+        </button>
+      </div>
+    );
   }
 
   if (state === "success") {
