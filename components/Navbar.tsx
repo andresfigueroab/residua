@@ -31,23 +31,23 @@ export default function Navbar() {
           </Link>
 
           {/* Services dropdown */}
-          <div className="relative">
-            <button
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
+          <div
+            className="relative"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
+            <Link
+              href="/services"
               className="flex items-center gap-1 text-sm text-charcoal hover:text-teal-700 transition-colors"
             >
               Services
               <svg className="w-3 h-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
-            </button>
+            </Link>
             {servicesOpen && (
-              <div
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden"
-              >
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2">
+                <div className="bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden">
                 <div className="p-2">
                   <p className="px-3 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-widest">Environmental Intelligence</p>
                   {services.slice(0, 3).map((s) => (
@@ -66,6 +66,7 @@ export default function Navbar() {
                   <Link href="/services" className="block px-3 py-2 text-sm font-medium text-teal-700 hover:bg-teal-50 rounded transition-colors">
                     View all services →
                   </Link>
+                </div>
                 </div>
               </div>
             )}
